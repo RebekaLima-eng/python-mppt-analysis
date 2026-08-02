@@ -51,33 +51,26 @@ Desenvolver uma aplicação capaz de calcular o Ponto de Máxima Potência (MPP)
 ```text
 python-mppt-analysis/
 │
+├── src/
+│   └── mppt.py                  # Código principal (MPPT P&O)
+├── images/
+│   └── mppt_curvas_iv_pv.jpeg   # Resultado: curvas I-V e P-V
 ├── README.md
 ├── LICENSE
-├── .gitignore
 ├── requirements.txt
-├── src/
-│   └── mppt.py
-└── images/
+└── .gitignore
 ```
 
 ---
 
-## 📊 Resultados
-
-O programa realiza:
-
-- Cálculo da potência para cada ponto da curva
-- Identificação automática do MPP
-- Exibição dos valores de tensão, corrente e potência máxima
-- Geração de gráficos I-V e P-V com destaque para o ponto de máxima potência
-
----
-
-## ▶️ Como executar
+## ▶️ Instalação
 
 ### Pré-requisitos
 
-- Python 3.10 ou superior
+- [Python 3.10 ou superior](https://www.python.org/downloads/)
+- [Git](https://git-scm.com/)
+
+### Passo a passo
 
 1. Clone este repositório
 
@@ -91,17 +84,62 @@ git clone https://github.com/RebekaLima-eng/python-mppt-analysis.git
 cd python-mppt-analysis
 ```
 
-3. Instale as dependências
+3. Crie e ative um ambiente virtual
+
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# Linux/macOS
+python3 -m venv venv
+source venv/bin/activate
+```
+
+4. Instale as dependências
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Execute o programa
+---
+
+## ▶️ Uso
+
+Execute o programa a partir da raiz do projeto:
 
 ```bash
 python src/mppt.py
 ```
+
+O programa solicitará duas listas separadas por vírgula:
+
+1. Os valores de **tensão (V)** para a curva I-V;
+2. Os valores de **corrente (A)** correspondentes.
+
+Em seguida, exibe o ponto de máxima potência encontrado pelo algoritmo P&O:
+
+```text
+Ponto de Máxima Potência (P&O):
+V = 16.50 V
+I = 2.85 A
+P = 47.03 W
+```
+
+Por fim, abre uma janela com os gráficos **Tensão × Corrente** e **Tensão × Potência**, destacando o MPP com um marcador vermelho e uma anotação com os valores.
+
+---
+
+## 📊 Resultados
+
+O programa realiza:
+
+- Cálculo da potência para cada ponto da curva
+- Identificação automática do MPP
+- Exibição dos valores de tensão, corrente e potência máxima
+- Geração de gráficos I-V e P-V com destaque para o ponto de máxima potência
+
+<img src="images/mppt_curvas_iv_pv.jpeg" alt="Curvas I-V e P-V com destaque do MPP" width="600">
 
 ---
 
@@ -119,7 +157,7 @@ python src/mppt.py
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a licença MIT.
+Este projeto está licenciado sob a licença Apache 2.0.
 
 ---
 
