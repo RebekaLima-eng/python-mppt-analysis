@@ -6,13 +6,13 @@ O projeto foi desenvolvido como atividade acadêmica da disciplina **Introduçã
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 Desenvolver uma aplicação capaz de calcular o Ponto de Máxima Potência (MPP) de um módulo fotovoltaico a partir de dados experimentais de tensão e corrente, apresentando os resultados em gráficos e destacando automaticamente o ponto de operação de máxima potência.
 
 ---
 
-## 📌 Funcionalidades
+## Funcionalidades
 
 - Entrada de dados de tensão e corrente
 - Cálculo automático da potência elétrica
@@ -24,7 +24,7 @@ Desenvolver uma aplicação capaz de calcular o Ponto de Máxima Potência (MPP)
 
 ---
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - **Python** — Linguagem principal
 - **NumPy** — Processamento numérico
@@ -32,7 +32,7 @@ Desenvolver uma aplicação capaz de calcular o Ponto de Máxima Potência (MPP)
 
 ---
 
-## 💡 Conceitos Aplicados
+## Conceitos Aplicados
 
 - Energia Solar Fotovoltaica
 - Maximum Power Point Tracking (MPPT)
@@ -143,7 +143,7 @@ O programa realiza:
 
 ---
 
-## 🚀 Competências Desenvolvidas
+## Competências Desenvolvidas
 
 - Programação em Python
 - Computação Científica
@@ -161,7 +161,7 @@ Este projeto está licenciado sob a licença Apache 2.0.
 
 ---
 
-## 👩‍💻 Autor
+## Autor
 
 **Rebeka Raquel Costa Lima**
 
